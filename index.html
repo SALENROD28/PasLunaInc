@@ -1,10 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Pas Luna Inc.</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Nonprofit Name</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .site-wrapper {
+      width: 96%;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border: 1px solid #cfcfcf;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    /* Top dark bar */
+    .top-bar {
+      background-color: #3f3f3f;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      min-height: 36px;
+    }
+
+    .updates-button {
+      background-color: #f28c38;
+      color: #ffffff;
+      padding: 11px 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .top-links {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      padding-right: 20px;
+    }
+
+    .top-links a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0 12px;
+      border-left: 1px solid #999;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .top-links a:first-child {
+      border-left: none;
+    }
+
+    .socials {
+      display: flex;
+      gap: 12px;
+      margin-left: 12px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Main navigation */
+    .main-header {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 30px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icons {
+      font-size: 26px;
+      color: #6c8f45;
+      letter-spacing: 4px;
+    }
+
+    .site-name {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      color: #6c8f45;
+      font-weight: normal;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 42px;
+    }
+
+    .main-nav a {
+      color: #555555;
+      text-decoration: none;
+      font-size: 17px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .search-icon {
+      font-size: 28px;
+      color: #333;
+    }
+
+    /* Hero section */
+    .hero {
+      height: 660px;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+        url("hero.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: #ffffff;
+      font-size: 56px;
+      line-height: 1.25;
+      font-weight: bold;
+      max-width: 900px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    }
+
+    .bottom-space {
+      height: 80px;
+      background-color: #ffffff;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 900px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .updates-button {
+        text-align: center;
+      }
+
+      .top-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+      }
+
+      .top-links a {
+        border-left: none;
+        padding: 4px 8px;
+      }
+
+      .main-header {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+      }
+
+      .main-nav {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .site-name {
+        font-size: 26px;
+      }
+
+      .hero {
+        height: 500px;
+        padding: 30px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Pas Luna Inc.</h1>
-  <p>Website coming soon.</p>
+
+  <div class="site-wrapper">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <a href="#" class="updates-button">GET UPDATES</a>
+
+      <div class="top-links">
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+        <a href="#">PRESS ROOM</a>
+        <a href="#">NEWS</a>
+        <a href="#">RESOURCES</a>
+        <a href="#">SHOP</a>
+
+        <div class="socials">
+          <span>f</span>
+          <span>t</span>
+          <span>◎</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+
+      <div class="logo-area">
+        <div class="logo-icons">● ● ● ●</div>
+        <div class="site-name">Your Nonprofit Name</div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#">Our Story</a>
+        <a href="#">Our Work</a>
+        <a href="#">Our Impact</a>
+        <a href="#">Make a Difference</a>
+        <a href="#">Donate</a>
+        <span class="search-icon">⌕</span>
+      </nav>
+
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="hero">
+      <h1>
+        Building paths forward.<br>
+        The next steps are up to us.
+      </h1>
+    </section>
+
+    <div class="bottom-space"></div>
+
+  </div>
+
 </body>
 </html>

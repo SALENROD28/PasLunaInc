@@ -288,4 +288,9 @@ body {
   .bottom-space {
     height: 55px;
   }
+
+  /* Force Pas Luna titles to black */
+  .site-name,
+  .home-hero-text h1 {
+    color: #000000 !important;
 }
